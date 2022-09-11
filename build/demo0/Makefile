@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+demo0/CMakeFiles/demo11.dir/rule:
+	cd /home/neo/demo2/build && $(MAKE) -f CMakeFiles/Makefile2 demo0/CMakeFiles/demo11.dir/rule
+.PHONY : demo0/CMakeFiles/demo11.dir/rule
+
+# Convenience name for target.
+demo11: demo0/CMakeFiles/demo11.dir/rule
+
+.PHONY : demo11
+
+# fast build rule for target.
+demo11/fast:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo11.dir/build.make demo0/CMakeFiles/demo11.dir/build
+.PHONY : demo11/fast
+
+# Convenience name for target.
+demo0/CMakeFiles/demo00.dir/rule:
+	cd /home/neo/demo2/build && $(MAKE) -f CMakeFiles/Makefile2 demo0/CMakeFiles/demo00.dir/rule
+.PHONY : demo0/CMakeFiles/demo00.dir/rule
+
+# Convenience name for target.
+demo00: demo0/CMakeFiles/demo00.dir/rule
+
+.PHONY : demo00
+
+# fast build rule for target.
+demo00/fast:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo00.dir/build.make demo0/CMakeFiles/demo00.dir/build
+.PHONY : demo00/fast
+
+# Convenience name for target.
 demo0/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
 	cd /home/neo/demo2/build && $(MAKE) -f CMakeFiles/Makefile2 demo0/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 .PHONY : demo0/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
@@ -656,6 +686,60 @@ src/demo00_sub.cpp.s:
 	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo1.dir/build.make demo0/CMakeFiles/demo1.dir/src/demo00_sub.cpp.s
 .PHONY : src/demo00_sub.cpp.s
 
+src/demo3_pub_dd.o: src/demo3_pub_dd.cpp.o
+
+.PHONY : src/demo3_pub_dd.o
+
+# target to build an object file
+src/demo3_pub_dd.cpp.o:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo00.dir/build.make demo0/CMakeFiles/demo00.dir/src/demo3_pub_dd.cpp.o
+.PHONY : src/demo3_pub_dd.cpp.o
+
+src/demo3_pub_dd.i: src/demo3_pub_dd.cpp.i
+
+.PHONY : src/demo3_pub_dd.i
+
+# target to preprocess a source file
+src/demo3_pub_dd.cpp.i:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo00.dir/build.make demo0/CMakeFiles/demo00.dir/src/demo3_pub_dd.cpp.i
+.PHONY : src/demo3_pub_dd.cpp.i
+
+src/demo3_pub_dd.s: src/demo3_pub_dd.cpp.s
+
+.PHONY : src/demo3_pub_dd.s
+
+# target to generate assembly for a file
+src/demo3_pub_dd.cpp.s:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo00.dir/build.make demo0/CMakeFiles/demo00.dir/src/demo3_pub_dd.cpp.s
+.PHONY : src/demo3_pub_dd.cpp.s
+
+src/demo3_sub_dd.o: src/demo3_sub_dd.cpp.o
+
+.PHONY : src/demo3_sub_dd.o
+
+# target to build an object file
+src/demo3_sub_dd.cpp.o:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo11.dir/build.make demo0/CMakeFiles/demo11.dir/src/demo3_sub_dd.cpp.o
+.PHONY : src/demo3_sub_dd.cpp.o
+
+src/demo3_sub_dd.i: src/demo3_sub_dd.cpp.i
+
+.PHONY : src/demo3_sub_dd.i
+
+# target to preprocess a source file
+src/demo3_sub_dd.cpp.i:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo11.dir/build.make demo0/CMakeFiles/demo11.dir/src/demo3_sub_dd.cpp.i
+.PHONY : src/demo3_sub_dd.cpp.i
+
+src/demo3_sub_dd.s: src/demo3_sub_dd.cpp.s
+
+.PHONY : src/demo3_sub_dd.s
+
+# target to generate assembly for a file
+src/demo3_sub_dd.cpp.s:
+	cd /home/neo/demo2/build && $(MAKE) -f demo0/CMakeFiles/demo11.dir/build.make demo0/CMakeFiles/demo11.dir/src/demo3_sub_dd.cpp.s
+.PHONY : src/demo3_sub_dd.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -665,6 +749,8 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... demo11"
+	@echo "... demo00"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... demo0_generate_messages_nodejs"
@@ -704,6 +790,12 @@ help:
 	@echo "... src/demo00_sub.o"
 	@echo "... src/demo00_sub.i"
 	@echo "... src/demo00_sub.s"
+	@echo "... src/demo3_pub_dd.o"
+	@echo "... src/demo3_pub_dd.i"
+	@echo "... src/demo3_pub_dd.s"
+	@echo "... src/demo3_sub_dd.o"
+	@echo "... src/demo3_sub_dd.i"
+	@echo "... src/demo3_sub_dd.s"
 .PHONY : help
 
 

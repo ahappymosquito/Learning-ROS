@@ -285,6 +285,32 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
+# Target rules for targets named demo11
+
+# Build rule for target.
+demo11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo11
+.PHONY : demo11
+
+# fast build rule for target.
+demo11/fast:
+	$(MAKE) -f demo0/CMakeFiles/demo11.dir/build.make demo0/CMakeFiles/demo11.dir/build
+.PHONY : demo11/fast
+
+#=============================================================================
+# Target rules for targets named demo00
+
+# Build rule for target.
+demo00: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo00
+.PHONY : demo00
+
+# fast build rule for target.
+demo00/fast:
+	$(MAKE) -f demo0/CMakeFiles/demo00.dir/build.make demo0/CMakeFiles/demo00.dir/build
+.PHONY : demo00/fast
+
+#=============================================================================
 # Target rules for targets named rosgraph_msgs_generate_messages_py
 
 # Build rule for target.
@@ -683,6 +709,8 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... demo11"
+	@echo "... demo00"
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... demo0_generate_messages_nodejs"

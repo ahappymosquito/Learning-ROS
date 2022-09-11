@@ -135,6 +135,8 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(demo0 src/demo00_pub.cpp)
 add_executable(demo1 src/demo00_sub.cpp)
+add_executable(demo00 src/demo3_pub_dd.cpp)
+add_executable(demo11 src/demo3_sub_dd.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -144,12 +146,19 @@ add_executable(demo1 src/demo00_sub.cpp)
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
-
+add_dependencies(demo00 ${PROJECT_NAME}_generate_messages_cpp )
+add_dependencies(demo11 ${PROJECT_NAME}_generate_messages_cpp )
 # Specify libraries to link a library or executable target against
 target_link_libraries(demo0
   ${catkin_LIBRARIES}
 )
 target_link_libraries(demo1
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo00
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(demo11
   ${catkin_LIBRARIES}
 )
 #############
