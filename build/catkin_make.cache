@@ -1,0 +1,2 @@
+demo0
+-DCATKIN_DEVEL_PREFIX=/home/neo/demo2/devel -DCMAKE_INSTALL_PREFIX=/home/neo/demo2/install -G Unix Makefiles
