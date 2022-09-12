@@ -869,6 +869,19 @@ demo1_generate_messages_py/fast:
 	$(MAKE) -f demo1/CMakeFiles/demo1_generate_messages_py.dir/build.make demo1/CMakeFiles/demo1_generate_messages_py.dir/build
 .PHONY : demo1_generate_messages_py/fast
 
+#=============================================================================
+# Target rules for targets named demo000
+
+# Build rule for target.
+demo000: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 demo000
+.PHONY : demo000
+
+# fast build rule for target.
+demo000/fast:
+	$(MAKE) -f demo3/CMakeFiles/demo000.dir/build.make demo3/CMakeFiles/demo000.dir/build
+.PHONY : demo000/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -936,6 +949,7 @@ help:
 	@echo "... demo1_generate_messages_nodejs"
 	@echo "... demo1_gennodejs"
 	@echo "... demo1_generate_messages_py"
+	@echo "... demo000"
 .PHONY : help
 
 

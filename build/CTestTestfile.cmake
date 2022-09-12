@@ -7,3 +7,4 @@
 subdirs("gtest")
 subdirs("demo0")
 subdirs("demo1")
+subdirs("demo3")

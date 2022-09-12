@@ -133,6 +133,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/neo/demo2/build/gtest/cmake_install.cmake")
   include("/home/neo/demo2/build/demo0/cmake_install.cmake")
   include("/home/neo/demo2/build/demo1/cmake_install.cmake")
+  include("/home/neo/demo2/build/demo3/cmake_install.cmake")
 
 endif()
 
