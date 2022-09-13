@@ -1,0 +1,8 @@
+prefix=/home/neo/demo2/install
+
+Name: rostt
+Description: Description of rostt
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
