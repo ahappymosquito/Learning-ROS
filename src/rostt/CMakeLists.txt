@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   std_msgs
+  turtlesim
 )
 
 ## System dependencies are found with CMake's conventions
@@ -135,7 +136,9 @@ include_directories(
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(put_teist src/put_teist.cpp)
-
+add_executable(sub_pose src/sub_pose.cpp)
+add_executable(service_client src/service_client.cpp)
+add_executable(param src/param.cpp)
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
@@ -150,7 +153,15 @@ add_executable(put_teist src/put_teist.cpp)
 target_link_libraries(put_teist
   ${catkin_LIBRARIES}
 )
-
+target_link_libraries(sub_pose
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(service_client
+  ${catkin_LIBRARIES}
+)
+target_link_libraries(param
+  ${catkin_LIBRARIES}
+)
 #############
 ## Install ##
 #############
