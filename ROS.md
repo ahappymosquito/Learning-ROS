@@ -11,7 +11,9 @@
 3. 换源（只有华为源有效）
 
    > ```wget -O /etc/apt/sources.list https://repo.huaweicloud.com/repository/conf/Ubuntu-Ports-bionic.list```
+   > 
    > ```sudo apt update```
+   > 
    > ```sudo apt upgrade```
 
 4. 安装ROS
