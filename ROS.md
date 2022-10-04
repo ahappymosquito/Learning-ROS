@@ -12,7 +12,7 @@
 
    > ```wget -O /etc/apt/sources.list https://repo.huaweicloud.com/repository/conf/Ubuntu-Ports-bionic.list```
    > ```sudo apt update```
-   > ```sudo apt upgrade**```
+   > ```sudo apt upgrade```
 
 4. 安装ROS
 
